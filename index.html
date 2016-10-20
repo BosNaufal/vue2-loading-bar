@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vue 2 Loading Bar</title>
+
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description" content="Vue 2 Loading Bar By Bos Naufal">
+  <link rel="stylesheet" href="./src/css/loading-bar.css">
+  <link rel="stylesheet" href="./src/css/app.css">
+</head>
+<body>
+
+  <div id="app">
+
+    <loading-bar
+      :on-error-done="errorDone"
+      :on-progress-done="progressDone"
+      :progress="progress"
+      :direction="direction"
+      :error="error" >
+    </loading-bar>
+
+    <div class="main">
+      <h1 align="center">Vue Loading Bar</h1>
+      <p align="center">Progress is {{ progress }}%</p>
+      <div class="button-container">
+        <button type="button" @click="progressTo(30)">Progress to 30</button>
+        <button type="button" @click="progressTo(50)">Progress to 50</button>
+        <button type="button" @click="progressTo(100)">Progress to 100</button>
+        <button type="button" @click="changeDirection">Change Direction</button>
+        <button class="error" type="button" @click="setToError(true)">Give An Error</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./build/bundle.js"></script>
+  <!-- <script src="./src/js/vue.js"></script>
+  <script src="./build/vue2-loading-bar.min.js"></script>
+  <script>
+    Vue.config.debug = true
+    Vue.config.devtools = true
+
+    let app = new Vue({
+
+      el: "#app",
+
+      components: {
+        LoadingBar: LoadingBar
+      },
+
+      data: function() {
+        return {
+          progress: 0,
+          error: false,
+          direction: 'right'
+        }
+      },
+
+      methods: {
+        progressTo: function (val) {
+          this.progress = val;
+        },
+
+        setToError: function (bol) {
+          this.error = bol;
+        },
+
+        changeDirection: function (direction) {
+          if(this.progress >= 0){
+            this.progress = 100;
+          }
+          this.direction = this.direction === 'right' ? 'left' : 'right';
+        },
+
+        // Callback
+        errorDone(){
+          this.error = false
+        },
+
+        progressDone() {
+          this.progress = 0
+        },
+
+      },
+
+      mounted: function () {
+        var me = this;
+        me.progress = 10;
+        for (var i = 0; i < 30; i++) {
+          if(i > 20 && i < 29){
+            setTimeout(function () {
+              me.progress += 5;
+            },50*i);
+          }else{
+            setTimeout(function () {
+              me.progress ++;
+            },10*i);
+          }
+        }
+        setTimeout(function () {
+          me.progress = 100;
+        },1500);
+      }
+
+    })
+
+  </script>
+ -->
+
+</body>
+</html>

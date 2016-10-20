@@ -1,0 +1,33 @@
+body{
+	font-family: sans-serif;
+}
+h1{
+	margin-top: 95px;
+}
+p{
+	margin-bottom: 45px;
+}
+button{
+	font-size: 15px;
+	outline: none;
+	color: #0EC77A;
+	cursor: pointer;
+	border: 1px solid #0EC77A;
+	background: none;
+	border-radius: 3px;
+	padding: 10px 15px;
+	display: block;
+	margin: 20px auto;
+}
+button:hover{
+	color: #fff;
+	background: #0EC77A;
+}
+button.error{
+	color: #F11A1A;
+	border-color: #F11A1A;
+}
+button.error:hover{
+	color: white;
+	background: #F11A1A;
+	}

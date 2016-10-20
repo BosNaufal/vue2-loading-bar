@@ -1,0 +1,55 @@
+/*! Copyright (c) 2016 Naufal Rabbani (http://github.com/BosNaufal)
+  * Licensed Under MIT (http://opensource.org/licenses/MIT)
+  *
+  * Vue 2 Loading Bar - Version 0.0.1
+  *
+  */
+
+.LoadingBar{
+  transition:all .3s ease;
+  -moz-transition:all .3s ease;
+  -webkit-transition:all .3s ease;
+  -o-transition:all .3s ease;
+  position:fixed;
+  top:0;
+  background:#1af184;
+  height:3px;
+  opacity:1
+}
+
+.LoadingBar-glow{
+  top:0;
+  position:absolute;
+  width:100px;
+  height:100%;
+  box-shadow:-3px 0 15px 1px rgba(0,255,231,.4)
+}
+
+.LoadingBar--to_right{
+  left:0
+}
+
+.LoadingBar--to_left,.LoadingBar--to_right .LoadingBar-glow{
+  right:0
+}
+
+.LoadingBar--to_left .LoadingBar-glow{
+  left:0
+}
+
+.LoadingBar--full{
+  transition:all .1s ease;
+  -moz-transition:all .1s ease;
+  -webkit-transition:all .1s ease;
+  -o-transition:all .1s ease;
+  height:0;
+  opacity:0
+}
+
+.LoadingBar--error{
+  background:#f44336;
+}
+
+.LoadingBar--error .LoadingBar-glow{
+  box-shadow:-3px 0 15px 1px rgba(244,67,54,.4);
+}

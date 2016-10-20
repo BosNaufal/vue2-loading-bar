@@ -1,0 +1,52 @@
+{
+  "name": "vue2-loading-bar",
+  "version": "0.0.1",
+  "description": "Youtube Like Loading Bar Component for Vue 2",
+  "main": "./build/vue2-loading-bar.js",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot --config ./webpack/webpack.config.js",
+    "dev-browser": "webpack-dev-server --inline --hot --config ./webpack/webpack-dev-browser.config.js",
+    "bundle": "webpack --config ./webpack/webpack-prod.config.js -p && webpack --config ./webpack/webpack-build.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BosNaufal/vue2-loading-bar.git"
+  },
+  "keywords": [
+    "vue",
+    "component",
+    "vue-js",
+    "vue2",
+    "loading-bar",
+    "youtube-loading-bar",
+    "vue2-loading-bar"
+  ],
+  "author": "Naufal Rabbani <bosnaufalemail@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BosNaufal/vue2-loading-bar/issues"
+  },
+  "homepage": "https://github.com/BosNaufal/vue2-loading-bar#readme",
+  "devDependencies": {
+    "babel-core": "^6.3.17",
+    "babel-helper-vue-jsx-merge-props": "^2.0.1",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-syntax-jsx": "^6.13.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-plugin-transform-runtime": "^6.3.13",
+    "babel-plugin-transform-vue-jsx": "^3.1.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-runtime": "^5.8.34",
+    "es6-promise": "^3.2.1",
+    "style-loader": "^0.13.1",
+    "vue-hot-reload-api": "",
+    "vue-html-loader": "",
+    "vue-loader": "",
+    "vue-style-loader": "",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "vue": ""
+  }
+}
