@@ -13,7 +13,7 @@
 </head>
 <body>
 
-  <div id="app">
+  <div id="app-container">
 
     <loading-bar
       :on-error-done="errorDone"
@@ -46,7 +46,7 @@
 
     let app = new Vue({
 
-      el: "#app",
+      el: "#app-container",
 
       components: {
         LoadingBar: LoadingBar
