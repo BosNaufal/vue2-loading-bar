@@ -9,8 +9,8 @@ module.exports = {
   entry: './src/js/components/',
 
   output: {
-    path: __dirname + '/build',
-    publicPath: './build/',
+    path: __dirname + '/../build',
+    publicPath: '/build/',
     filename: 'vue2-loading-bar.js',
     library: 'LoadingBar',
     libraryTarget: 'umd'

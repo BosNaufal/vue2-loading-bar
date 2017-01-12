@@ -9,8 +9,8 @@ module.exports = {
   entry: './src/js/main.js',
 
   output: {
-    path: __dirname + '/build',
-    publicPath: 'build/',
+    path: __dirname + '/../build',
+    publicPath: '/build/',
   },
 
   module: {

@@ -44,7 +44,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.c = installedModules;
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "./build/";
+/******/ 	__webpack_require__.p = "/build/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -115,14 +115,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 	  },
 	  render: function render(h) {
-	    var direction = this.direction;
-	    var customClass = this.customClass;
-	    var id = this.id;
-	    var width = this.width;
-	    var show = this.show;
-	    var full = this.full;
-	    var myError = this.myError;
-	    var styling = this.styling;
+	    var direction = this.direction,
+	        customClass = this.customClass,
+	        id = this.id,
+	        width = this.width,
+	        show = this.show,
+	        full = this.full,
+	        myError = this.myError,
+	        styling = this.styling;
 	
 	
 	    return h(
